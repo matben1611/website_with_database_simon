@@ -27,14 +27,17 @@ if(isset($_GET['mitarbeiternr']))
                 <input type="submit" value="Update">
             </form>
         ';
+        echo '<br><br><a href="mitarbeiter.php">Zurück</a>'; // Zurück-Button;
     }
     else
     {
         echo "Mitarbeiter nicht gefunden.";
+        echo '<br><br><a href="mitarbeiter.php">Zurück</a>'; // Zurück-Button;
     }
 }
 else
 {
     echo "Ungültige Anforderung.";
+    echo '<br><br><a href="mitarbeiter.php">Zurück</a>'; // Zurück-Button;
 }
 ?>

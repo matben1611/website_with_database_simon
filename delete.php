@@ -13,6 +13,7 @@ if(isset($_GET['mitarbeiternr']))
     if($result)
     {
         echo "Mitarbeiter erfolgreich gelöscht.";
+        echo '<br><br><a href="mitarbeiter.php">Zurück</a>'; // Zurück-Button
     }
     else
     {

@@ -16,18 +16,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if($result)
         {
             echo "Neuer Mitarbeiter wurde erfolgreich hinzugefügt.";
+            echo '<br><br><a href="mitarbeiter.php">Zurück</a>'; // Zurück-Button
         }
         else
         {
             echo "Fehler beim Hinzufügen des Mitarbeiters.";
+            echo '<br><br><a href="mitarbeiter.php">Zurück</a>'; // Zurück-Button
         }
     }
     else
     {
         echo "Ungültige Anforderung.";
+        echo '<br><br><a href="mitarbeiter.php">Zurück</a>'; // Zurück-Button
     }
 }
 ?>
+
 
 <form method="POST" action="">
     <label for="nachname">Nachname:</label>
@@ -38,3 +42,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <input type="text" name="geburtsdatum" id="geburtsdatum"><br>
     <input type="submit" value="Add">
 </form>
+<br><br><a href="mitarbeiter.php">Zurück</a>

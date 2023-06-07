@@ -40,6 +40,8 @@ if(mysqli_num_rows($result1) > 0)
     
     $table .= '</table>';
     echo $table;
+
+    echo '<br><br><a href="index.html">Zurück</a>';
 }
 ?>
 

@@ -16,14 +16,17 @@ if(isset($_POST['mitarbeiternr']) && isset($_POST['nachname']) && isset($_POST['
     if($result)
     {
         echo "Mitarbeiter erfolgreich aktualisiert.";
+        echo '<br><br><a href="mitarbeiter.php">Zurück</a>'; // Zurück-Button
     }
     else
     {
         echo "Fehler beim Aktualisieren des Mitarbeiters.";
+        echo '<br><br><a href="mitarbeiter.php">Zurück</a>'; // Zurück-Button
     }
 }
 else
 {
     echo "Ungültige Anforderung.";
+    echo '<br><br><a href="mitarbeiter.php">Zurück</a>'; // Zurück-Button
 }
 ?>
